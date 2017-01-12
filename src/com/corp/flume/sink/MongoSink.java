@@ -32,7 +32,7 @@ public class MongoSink extends AbstractSink implements Configurable {
 	private String defaultDb;
 	private String defaultCol;
 	private String selection = "source";
-	private int batch = 100;
+	private int batch = 1;
 	
 	private MongoClient mongoClient;
 	private Map<String, IDocumentConverter> converters = new HashMap<>();
